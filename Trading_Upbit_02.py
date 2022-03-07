@@ -51,7 +51,7 @@ while True :
     # 09시 목표가 갱신
     # if (now.hour == 16) and (now.minute == 38) and (20 <= now.second <= 30):
     # if (now.hour == 9) and (now.minute == 00) and (20 <= now.second <= 30):
-    if (now.hour == 24) and (now.minute == 00) and (20 <= now.second <= 30):
+    if (now.hour == 0) and (now.minute == 00) and (20 <= now.second <= 30):
         target_pri = cal_target(ticker_nm)
         time.sleep(10)
         op_mode = True
