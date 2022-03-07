@@ -31,8 +31,14 @@ f = open("220215_key.txt")
 lines = f.readlines()
 access_key = lines[0].strip()
 secret_key = lines[1].strip()
+gubun = lines[2].strip()
 f.close()
 upbit = pyupbit.Upbit(access_key, secret_key)  # class instance, object
+
+if gubun == "1" :
+    op_mode = True
+    hold = True
+
 
 target_pri  = cal_target(ticker_nm)
 ma5 = get_yesterday_ma5(ticker_nm)
@@ -84,6 +90,3 @@ while True :
 # balances = upbit.get_balances()
 # pprint.pprint(balances)
 # print(balances[6])
-
-
-
