@@ -69,7 +69,7 @@ while True :
 
     # print(now,price," : ",target_pri )
     # print(upbit.get_balance(ticker_nm)*0.1)
-    # 상태출력
+    # 상태출력 up
     print(f"현재시간: {now} 목표가: {target_pri} 현재가: {price} MA5: {ma5} 보유상태: {hold} 동작상태:{op_mode}")
 
     time.sleep(1)
