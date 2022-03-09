@@ -24,7 +24,7 @@ def get_yesterday_ma5(ticker) :
     df = pyupbit.get_ohlcv(ticker)
     close = df['close']
     ma = close.rolling(5).mean()
-    return ma[-2]
+    return ma[-1]
 
 # 비트업 인증 객체생성
 f = open("220215_key.txt")
