@@ -50,7 +50,8 @@ while True :
 
     # 09시 목표가 갱신
     # if (now.hour == 16) and (now.minute == 38) and (20 <= now.second <= 30):
-    if (now.hour == 9) and (now.minute == 00) and (20 <= now.second <= 30):
+    # if (now.hour == 9) and (now.minute == 00) and (20 <= now.second <= 30):
+    if (now.hour == 00) and (now.minute == 00) and (20 <= now.second <= 30):
         target_pri = cal_target(ticker_nm)
         time.sleep(10)
         op_mode = True
@@ -65,7 +66,8 @@ while True :
 
     # 매도 시도.
     # if (now.hour == 18 ) and (now.minute == 00) and (50 <= now.second <= 59):
-    if (now.hour == 8) and (now.minute == 55) and (50 <= now.second <= 59):
+    # if (now.hour == 8) and (now.minute == 55) and (50 <= now.second <= 59):
+    if (now.hour == 23) and (now.minute == 55) and (50 <= now.second <= 59):
         if op_mode is True and hold is True :
             btc_balance = upbit.get_balance(ticker_nm)
             upbit.sell_market_order(ticker_nm,btc_balance)
